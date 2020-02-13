@@ -1,51 +1,38 @@
 ﻿<!DOCTYPE html>
-<!--
-tag table e div.
-Svolgimento: Realizzare un sito la vendita di motociclette.
-Dalla pagina di presentazione si accede ad un elenco di motociclette.
-1) Creare una homepage.
-Dovrà contenere almeno:
-- 3 immagini;
-- 3 link esterni;
-- 1 tabella;
-- 1 div.
-2) Creare la pagina con l’elenco delle motociclette.
-Ogni motocicletta deve essere inserita in una tabella annidata in un’altra tabella
-Nella pagina dovranno esserci:
-- almeno 10 motociclette e un'immagine per ogni motocicletta;
-- 2 motociclette in evidenza in quanto offerte speciali.
-Ogni motocicletta dovrà avere indicato marca, modello, prezzo, cilindrata.
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorlife Vendita di moto</title>
+    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class=" header">
-                <h1>MOTORLIFE</h1>
-                <h2>Secondo sito in sella</h2>
-
-                <div class="nav">
-                    <nav>
-                        <ul>
-                            <li>Marchi</li>
-                            <li>Promo</li>
-                            <li>Contatti</li>
-                        </ul>
-                    </nav>
-                </div>
+        <header class="row">
+            <div class="header col-3">
+                <span><h1>MOTORLIFE</h1></span>
+                <span><h2>Secondo sito in sella</h2></span>
             </div>
         </header>
 
+        <nav>
+            <div class="nav row">
+                <ul class="col-4">
+                    <li>Marchi</li>
+                    <li>Promo</li>
+                    <li>Contatti</li>
+                </ul>
+            </div>
+        </nav>
+
         <main>
-            <div class="main">
+            <div class="main row">
                 <div class="categories">
-                    <table>
+                    <table class="tabella row col-8">
                         <tr>
                             <td>stradali</td>
                             <td>naked</td>
@@ -60,33 +47,33 @@ Ogni motocicletta dovrà avere indicato marca, modello, prezzo, cilindrata.
                 </div>
             </div>
         </main>
-        
-        <div class="news_container">
-            <div class="news_text">
+
+        <div class="news_container row">
+            <div class="news_text row col-4">
                 <h2>Newsletter</h2>
                 <h3>Iscriviti e rimani aggiornato sulle promo</h3>
-             </div>
-            <div class="news_form">
+            </div>
+            <div class="news_form row col-3">
                 <input type="text" placeholder="scrivi la tua email" />
                 <button type="submit">iscriviti</button>
             </div>
 
-        <footer>
-            <div class="footer">
-                <div class="socials">
-                    <a href=""><img src="/IMG/" /></a>
-                    <a href=""><img src="/IMG/" /></a>
+            <footer>
+                <div class="footer row col-12">
+                    <div class="socials row col-3">
+                        <a href=""><img src="./IMG/instagram.png" /></a>
+                        <a href=""><img src="/IMG/facebook.png" /></a>
+                    </div>
+                    <div class="foot_text row col-3">
+                        <h4>Privacy - Cookie Policy</h4>
+                        <h4>P.Iva 0000 0000 0000 0000</h4>
+                    </div>
                 </div>
-                <div class="foot_text">
-                    <h4>Privacy - Cookie Policy</h4>
-                    <h4>P.Iva 0000 0000 0000 0000</h4>
-                </div>
-            </div>
-        </footer>
+            </footer>
 
-    </div>
+        </div>
 
 
-    <script src="JS/script.js"></script>
+        <script src="JS/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+* {box-sizing: border-box;
+   margin:0px;
+   padding:0px;
+   border:solid 1px rgba(128, 128, 128, 0.59);
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+html {font-family: 'Racing Sans One', cursive;}
+
+body {
+    /*overflow:hidden;*/
+}
+
+.container{max-width: 100vw;}
+
+.header{
+}
+
+.nav{
+   
+}
+.nav ul li{
+    list-style:none;
+    display:inline;
+}
+
+.main{
+
+}
+
+
+
+.categories{
+
+}
+
+.tabella{
+    height:800px;
+    border-collapse:collapse;
+    margin:auto;
+}
+
+.tabella tr td{
+    text-align:center;
+}
+.news_container{
+
+}
+
+.news_container:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.news_text{
+    float:left;
+}
+
+.news_form{
+    float:right;
+}
+
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+}
+
+    .footer:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.socials{
+    float:left;
+    height:50%;
+}
+
+
+.foot_text{
+    float:right;
+}
+
+
