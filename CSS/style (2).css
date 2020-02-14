@@ -35,17 +35,28 @@ body {
 }
 
 .main{
-    width:100%;
+
 }
 
 
 
-.col-3.cat{
-    float:left;
-    width: inherit;
-    height:auto;
+.categories{
+
 }
 
+.tabella{
+    width:95%;
+    border-collapse:collapse;
+    margin:auto;
+}
+
+    .tabella tr td {
+        text-align: center;
+        width: 350px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-clip: content-box;
+    }
 
 #stradali {
     background-image: url(../IMG/stradale.jpg);
