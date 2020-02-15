@@ -29,6 +29,7 @@ body {
     height: auto;
     top:0px;
     background-color: rgba(251, 0, 0, 0.637);
+    z-index:2;
 }
 
 .header h1{
@@ -44,6 +45,7 @@ body {
 .nav{
    position: fixed;
    top:20px; right:0px;
+   z-index:1;
 }
 
 .nav::after {
@@ -63,21 +65,51 @@ body {
     text-transform: uppercase;
 }
 
-.spacer{
-    width:100%; height:200px;
-}
 .main{
-    width:100%;
-    height:70vh;
+    width:90%;
+    margin:auto;
 }
 
-.col-3.cat{
+.categ_container {
+    max-width: inherit;
+    margin: auto;
+    border: dotted 1px darksalmon;
+}
+
+.categ_item{
     float:left;
-    width: inherit;
-    height:auto;
+    width: 33.33%;
+    padding:5px;
 }
 
+.categ_container figure img{
+    width:100%;
+    border-radius:5px;
+}
 
+.categ_item figure{
+    position:relative;
+}
+
+.categ_item figcaption {
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+    font-family: verdana;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+    .categ_item figcaption:hover {
+        letter-spacing: 20px;
+        background-color: #ff00007d;
+    }
+
+
+    /*
 #stradali {
     background-image: url(../IMG/stradale.jpg);
 }
@@ -96,10 +128,9 @@ body {
 #naked {
     background-image: url(../IMG/naked.jpg);
 }
-
-.news_container{
-
-}
+    */
+    .news_container {
+    }
 
 .news_container:after {
     content: "";
@@ -122,8 +153,6 @@ body {
 .footer {
     background-color:rgba(0, 0, 0, 0.801);
     color: #ffffff;
-    position:fixed;
-    bottom:0px;
 }
 
 .socials{
@@ -144,4 +173,16 @@ body {
 font-weight: lighter;
 }
 
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.spacer {
+    width: 100%;
+    height: 100px;
+}
 
