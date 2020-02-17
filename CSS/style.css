@@ -51,6 +51,7 @@ body {
     .header h2 {
         position: relative;
         left: 10%;
+        display:inline-block;
     }
 
 .nav {
