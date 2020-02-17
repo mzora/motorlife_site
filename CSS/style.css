@@ -1,7 +1,8 @@
-* {box-sizing: border-box;
-   margin:0px;
-   padding:0px;
-   /*border:solid 1px rgba(128, 128, 128, 0.59);*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /*border:solid 1px rgba(128, 128, 128, 0.59);*/
 }
 
 .row::after {
@@ -15,59 +16,71 @@
     padding: 10px;
 }
 
-html {font-family: 'Racing Sans One', cursive;}
+html {
+    font-family: 'Racing Sans One', cursive;
+}
 
 body {
     /*overflow:hidden;*/
 }
 
-.container{max-width: 100vw;}
+.container {
+    max-width: 100vw;
+}
 
-.header{
-    width:100%;
-    position:fixed;
+.header {
+    width: 100%;
+    position: fixed;
     height: auto;
-    top:0px;
+    top: 0px;
     background-color: rgba(251, 0, 0, 0.637);
-    z-index:2;
+    z-index: 2;
 }
 
-.header h1{
-    position: relative;
-    left:5%; 
-    letter-spacing: 10px;
+    .header a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .header h1 {
+        position: relative;
+        left: 5%;
+        letter-spacing: 10px;
+    }
+
+    .header h2 {
+        position: relative;
+        left: 10%;
+    }
+
+.nav {
+    position: fixed;
+    top: 20px;
+    right: 0px;
+    z-index: 2;
 }
 
-.header h2{
-    position: relative;
-    left:10%;
-}
-.nav{
-   position: fixed;
-   top:20px; right:0px;
-   z-index:1;
-}
+    .nav::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
-.nav::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+    .nav ul {
+        position: relative;
+        right: 15%;
+    }
 
-.nav ul{
-    position:relative;
-    right:15%;
-}
-.nav ul li{
-    list-style:none;
-    display:inline-block;
-    width:100px;
-    text-transform: uppercase;
-}
+        .nav ul li {
+            list-style: none;
+            display: inline-block;
+            width: 100px;
+            text-transform: uppercase;
+        }
 
-.main{
-    width:90%;
-    margin:auto;
+.main {
+    width: 90%;
+    margin: auto;
 }
 
 .categ_container {
@@ -76,19 +89,19 @@ body {
     border: dotted 1px darksalmon;
 }
 
-.categ_item{
-    float:left;
+.categ_item {
+    float: left;
     width: 33.33%;
-    padding:5px;
+    padding: 5px;
 }
 
-.categ_container figure img{
-    width:100%;
-    border-radius:5px;
+.categ_container figure img {
+    width: 100%;
+    border-radius: 5px;
 }
 
-.categ_item figure{
-    position:relative;
+.categ_item figure {
+    position: relative;
 }
 
 .categ_item figcaption {
@@ -108,8 +121,13 @@ body {
         background-color: #ff00007d;
     }
 
+    .categ_item figcaption a, .categ_item figcaption a:link, .categ_item figcaption a:active {
+        color: white;
+        text-decoration: none;
+    }
 
-    /*
+
+/*
 #stradali {
     background-image: url(../IMG/stradale.jpg);
 }
@@ -129,50 +147,86 @@ body {
     background-image: url(../IMG/naked.jpg);
 }
     */
-    .news_container {
+.news_container {
+}
+
+    .news_container:after {
+        content: "";
+        clear: both;
+        display: table;
     }
 
-.news_container:after {
-    content: "";
-    clear: both;
-    display: table;
+.news_text {
+    float: left;
 }
 
-.news_text{
-    float:left;
-}
+    .news_text h2, .news_text h3 {
+        font-weight: lighter;
+    }
 
-.news_text h2, .news_text h3{
-    font-weight: lighter;
-}
-
-.news_form{
-    float:right;
+.news_form {
+    float: right;
 }
 
 .footer {
-    background-color:rgba(0, 0, 0, 0.801);
+    background-color: rgba(0, 0, 0, 0.801);
     color: #ffffff;
 }
 
-.socials{
-    float:left;
-    width:30px:
+.socials {
+    float: left;
+    width: 30px:
 }
 
-.socials img{
-    width:35px;
+    .socials img {
+        width: 35px;
+    }
+
+
+.foot_text {
+    float: right;
 }
 
+    .foot_text h4 {
+        font-weight: lighter;
+    }
+/**********************************elenco_moto**/
 
-.foot_text{
-    float:right;
+.figure {
+    float: left;
+    width: 50%;
+    margin-bottom: 15px;
 }
 
-.foot_text h4{
-font-weight: lighter;
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.outer_table {
+    width: 100%;
+}
+
+.inner_table {
+}
+
+.img_cell {
+    width: 200px;
+}
+
+    .img_cell img {
+        height: 200px;
+    }
+/**********************************dev_tool**/
 .clearfix:after {
     content: ".";
     visibility: hidden;
@@ -185,4 +239,3 @@ font-weight: lighter;
     width: 100%;
     height: 100px;
 }
-
