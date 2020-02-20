@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorlife Vendita di moto</title>
-    <link rel="stylesheet" href="CSS/grid.css">
-    <link rel="stylesheet" href="CSS/style.css">
-
 
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <div class="container">
@@ -18,15 +23,20 @@
                 <span><h2>Secondo sito in sella</h2></span>
             </div>
         </header>
-        
-        <div class="spacer">
 
-        </div>
+        <div class="spacer"></div>
 
         <nav>
             <div class="nav">
-                <ul class="nav_list">
-                    <li>Marchi</li>
+                <ul id="parent" class="parent">
+                    <li>
+                        Marchi
+                        <ul class="child">
+                            <li><a href="https://www.honda.it/motorcycles.html">Honda</a></li>
+                            <li><a href="https://www.kawasaki.it/it/products">Kavasaki</a></li>
+                            <li><a href="https://www.ktm.com/it/">KTM</a></li>
+                        </ul>
+                    </li>
                     <li>Promo</li>
                     <li>Contatti</li>
                 </ul>
@@ -36,7 +46,7 @@
         <main>
             <div class="main">
                 <div class="categ_container clearfix">
-                    
+
                     <div class="categ_item" id="naked">
                         <figure>
                             <img src="IMG/naked.jpg" />
@@ -54,7 +64,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    
+
                     <div class="categ_item" id="motard">
                         <figure>
                             <img src="IMG/naked.jpg" />
@@ -105,26 +115,26 @@
                 <h3>Iscriviti e rimani aggiornato sulle promo</h3>
             </div>
             <div class="news_form row col-3">
-                <input type="text" placeholder="scrivi la tua email" />
-                <button type="submit">iscriviti</button>
+                <input class="place" type="text" placeholder="scrivi la tua email" />
+                <button class="button" type="submit">iscriviti</button>
             </div>
 
-            <footer>
-                <div class="footer row col-12">
-                    <div class="socials row col-3">
-                        <a href=""><img src="./IMG/instagram.png" /></a>
-                        <a href=""><img src="./IMG/facebook.png" /></a>
-                    </div>
-                    <div class="foot_text row col-3">
-                        <h4>Privacy - Cookie Policy</h4>
-                        <h4>P.Iva 000 000 000 00</h4>
-                    </div>
-                </div>
-            </footer>
-
         </div>
+        <footer>
+            <div class="footer row col-12">
+                <div class="socials row col-3">
+                    <a href=""><img src="./IMG/instagram.png" /></a>
+                    <a href=""><img src="./IMG/facebook.png" /></a>
+                </div>
+                <div class="foot_text row col-3">
+                    <h4>Privacy - Cookie Policy</h4>
+                    <h4>P.Iva 000 000 000 00</h4>
+                </div>
+            </div>
+        </footer>
     </div>
-    
-    <!--<script src="JS/script.js"></script>-->
+    <script src="JS\jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui-1.12.1\jquery-ui.js"></script>
+    <script src="JS\script.js"></script>
 </body>
 </html>

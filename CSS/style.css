@@ -74,10 +74,26 @@ body {
 
         .nav ul li {
             list-style: none;
-            display: inline-block;
+            display: inline-table;
             width: 100px;
             text-transform: uppercase;
         }
+
+ul.child{
+    display:none;
+
+}
+ul.child a{
+    text-decoration:none;
+    color:black;
+}
+
+ul.child:first-child{
+    padding-top:7px;
+}
+    ul.child li {
+        padding-left: 20px;
+    }
 
 .main {
     width: 90%;
@@ -87,7 +103,7 @@ body {
 .categ_container {
     max-width: inherit;
     margin: auto;
-    border: dotted 1px darksalmon;
+    /*border: dotted 1px darksalmon;*/
 }
 
 .categ_item {
@@ -127,27 +143,6 @@ body {
         text-decoration: none;
     }
 
-
-/*
-#stradali {
-    background-image: url(../IMG/stradale.jpg);
-}
-#cross {
-    background-image: url(../IMG/cross.jpg);
-}
-#custom {
-    background-image: url(../IMG/custom.jpg);
-}
-#scooter {
-    background-image: url(../IMG/scooter.jpg);
-}
-#motard {
-    background-image: url(../IMG/motard.jpg);
-}
-#naked {
-    background-image: url(../IMG/naked.jpg);
-}
-    */
 .news_container {
 }
 
@@ -167,7 +162,28 @@ body {
 
 .news_form {
     float: right;
+    background-color: rgba(251, 0, 0, 0.637);
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
+
+.place {
+    border: 0px;
+    border-radius: 2px;
+    padding: 6px;
+    width: 175px;
+}
+
+.button {
+    font-size: 100%;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: 0px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
 
 .footer {
     background-color: rgba(0, 0, 0, 0.801);
@@ -227,12 +243,12 @@ th, td {
     .img_cell img {
         height: 200px;
     }
-/**********************************dev_tool**/
+
+
 .clearfix:after {
-    content: ".";
+    content: "";
     visibility: hidden;
     display: block;
-    height: 0;
     clear: both;
 }
 
